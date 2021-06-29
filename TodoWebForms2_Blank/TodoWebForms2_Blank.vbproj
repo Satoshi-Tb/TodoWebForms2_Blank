@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Models\Todo.sql" />
     <Content Include="style.css" />
     <Content Include="TodoDetail.aspx" />
     <Content Include="TodoForm.aspx" />
@@ -101,6 +102,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DBManager.vb" />
+    <Compile Include="Models\DbSample.vb" />
     <Compile Include="Models\TodoItem.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

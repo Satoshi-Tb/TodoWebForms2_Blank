@@ -33,19 +33,19 @@
         Return todoTable(id)
     End Function
 
-    Public Shared Sub InsertTodo(todo As TodoItem)
+    Public Shared Sub Insert(todo As TodoItem)
         '重複チェック割愛
         seqNo += 1
         todo.ID = seqNo
         todoTable(todo.ID) = todo
     End Sub
 
-    Public Shared Sub UpdateTodo(todo As TodoItem)
+    Public Shared Sub Update(todo As TodoItem)
         'データなしチェック割愛
         todoTable(todo.ID) = todo
     End Sub
 
-    Public Shared Sub DeleteTodo(todo As TodoItem)
+    Public Shared Sub Delete(todo As TodoItem)
         todoTable.Remove(todo.ID)
     End Sub
 
